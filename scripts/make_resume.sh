@@ -1,0 +1,2 @@
+
+pdflatex src/resume.tex

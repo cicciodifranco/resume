@@ -1,0 +1,269 @@
+{
+  "selectedTemplate": 1,
+  "headings": {
+    "work": "Work Experience",
+    "skills": "Skils",
+    "projects": "Pubblications and Open Source Contributions",
+    "awards": "",
+    "education": "Education"
+  },
+  "basics": {
+    "name": "Francesco Giorgio Di Franco",
+    "email": "francescodifranco90@gmail.com",
+    "phone": "(+39) 347 77 48 618",
+    "location": {
+      "address": "Catania, IT"
+    },
+    "website": "https://www.linkedin.com/in/francesco-di-franco-865115b7/"
+  },
+  "education": [
+    {
+      "location": "Catania, IT",
+      "area": "Computer Science - Distributed Systems and Security, Grade: 110/110",
+      "studyType": "MS",
+      "startDate": "2016",
+      "endDate": "2020",
+      "institution": "Università degli studi di Catania"
+    },
+    {
+      "institution": "Università degli studi di Catania",
+      "location": "Catania, IT",
+      "studyType": "BS",
+      "area": "Computer Science",
+      "startDate": "2011",
+      "endDate": "2016"
+    }
+  ],
+  "work": [
+    {
+      "location": " Catania (remote)",
+      "position": "Tech Lead",
+      "website": "",
+      "startDate": "Nov 22",
+      "endDate": "Present",
+      "highlights": [
+        "Design and development of psm-detector: an AI application made using Python, GStreamer, Nvidia Deepstream, and YoloV8 to do real-time detection.",
+        "Design and development of the new edge data pipeline using Triton server and redis",
+        "Design and development of the edge monitoring system using grafana agent",
+        "SRE of the parksmart-platform: maintaining and configuring required infrastructure using terraform: VPC, EKS (Kuberntes, Flux, Istio, External-dns, cluster-autoscaler, let’s encrypt, Grafana agent), Route53"
+      ],
+      "company": "ParkSmart s.r.l."
+    },
+    {
+      "highlights": [
+        "Design and development of Livestream-platform highly scalable and highly available RTMP proxy to receive all customer streams and distribute using AWS IVS and MUX. The platform was made of a RestAPI interface built using TypeScript (TwirpTs + Express), gRpc, and AWS DynamoDB. The RTMP-proxy was built using Nginx, Nginx-RTMP, NodeJs, and ffmpeg. The platform was deployed in multiple regions with an active passive failover strategy using AWS Route53.",
+        "Development of MTS (Media Transform Service): a service that exposes RestAPIs to process video (transcode, convert to HLS, captioning, trimming)",
+        "Development of MAR (Media Asset Registry): a service for VOD (consume MTS APIs and distribute generated HLS using AWS Cloudfront)",
+        "Development of Mixer: a web page recorder built using Puppeteer (chromium), WebSockets, and FFmpeg.",
+        "SRE of the livestream-platform: maintaining and configuring required infrastructure using terraform: VPC, EKS (Kubernetes, Flux, Istio, External-dns, cluster-autoscaler, let’s encrypt, Datadog agent, OT collector), Route53"
+      ],
+      "company": "Hopin l.t.d.",
+      "position": " Senior Backend Engineer (Video)",
+      "location": "London (remote)",
+      "startDate": "Oct 2020",
+      "endDate": "Nov 2022"
+    },
+    {
+      "highlights": [
+        "Lead Backend Developer. Designer and developer of highly scalable and highly available microservices application, built in a hybrid architecture cloud-edge, to deliver real-time geolocated events to users, and manage edge devices and payments from users.",
+        "Fron tEnd Developer. Developer of a web dashboard to manage all events and devices",
+        "Tech stack: ReactJS, Socket.io, Nodejs, MongoDB, AWS (S3, Lambda, IoT, DynamoDB, EKS), Kubernetes, GitlabCI."
+      ],
+      "company": "ParkSmart s.r.l.",
+      "position": "Full Stack Developer",
+      "location": "Catania",
+      "startDate": "Oct 2015",
+      "endDate": "Oct 2020"
+    },
+    {
+      "highlights": [
+        "Development of an audio system for rainfall classification. Convolutional neural networks for audio classification of rainfall, processing audio signal as a 2D signal with Pytorch, PyAudio, Numpy, Pandas, RaspberryPI mod 3B+, and Amazon Web Services.",
+        "Development of a platform to manage smart intercoms and do video calls when you are away using NodeJs, Python (Flask),  Janus Web RTC Gateway, and Amazon Web Services. ",
+        "Backend Developer. Developed a platform to manage drones, copters, and rovers using ROS and NodeJs"
+      ],
+      "company": "Vicosystems s.r.l.",
+      "position": "ML/BE Developer consultant",
+      "location": "Catania",
+      "startDate": "Sept 2017",
+      "endDate": "Oct 2020"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
+        "TypeScript",
+        "Javascript",
+        "Python",
+        "C",
+        "Dart",
+        "Go"
+      ]
+    },
+    {
+      "keywords": [
+        "PostgreSQL",
+        "Mysql / MariaDB",
+        "MongoDB",
+        "Dynamo DB",
+        "Redis"
+      ],
+      "name": "Databases"
+    },
+    {
+      "keywords": [
+        "ReactJS",
+        "Vue",
+        "Angular 14+",
+        "Flutter",
+        "HTML5/CSS"
+      ],
+      "name": "Frontend"
+    },
+    {
+      "keywords": [
+        "Gstreamer",
+        "Ffmpeg",
+        "Nvidia Deepstream"
+      ],
+      "name": "Media frameworks / tools"
+    },
+    {
+      "keywords": [
+        "AWS",
+        "GCP",
+        "Kubernetes"
+      ],
+      "name": "Cloud Technologies"
+    },
+    {
+      "keywords": [
+        "Kubeflow",
+        "Pytorch",
+        "Numpy",
+        "Pandas"
+      ],
+      "name": "AI"
+    },
+    {
+      "keywords": [
+        "GitlabCI",
+        "GitHub Actions",
+        "FluxCD",
+        "ArgoCD"
+      ],
+      "name": "DevOps"
+    },
+    {
+      "keywords": [
+        "Grafana",
+        "Prometheus",
+        "Tempo",
+        "Loki",
+        "Datadog"
+      ],
+      "name": "Monitoring"
+    },
+    {
+      "keywords": [
+        "Terraform + Terragrunt + Atlantis",
+        "Kustomize",
+        "Helm",
+        "Kustomize"
+      ],
+      "name": "Infra"
+    },
+    {
+      "keywords": [
+        ""
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "url": "https://www.researchgate.net/publication/339818489_SMILE_Smart_Monitoring_IoT_Learning_Ecosystem",
+      "keywords": [
+        ""
+      ],
+      "name": "SMILE: Smart Monitoring IoT Learning Ecosystem",
+      "description": "February 2020, International Journal on Advanced Science Engineering and Information Technology 10(1):413"
+    },
+    {
+      "keywords": [
+        ""
+      ],
+      "name": "A Convolutional Neural Networks Approach to Audio Classification for Rainfall Estimation - IEEE Conference Publication",
+      "description": "September 2019, Technology and Applications (IDAACS), 2019 10th IEEE International Conference on Intelligent Data Acquisition and Advanced Computing Systems",
+      "url": "https://ieeexplore.ieee.org/document/8924399"
+    },
+    {
+      "keywords": [
+        ""
+      ],
+      "url": "https://github.com/cicciodifranco/2k-power-residue",
+      "description": "An implementation in C of BHJL13- Efficient Cryptosystems From 2k-th Power Residue Symbols",
+      "name": "BHJL13- Efficient Cryptosystems From 2k-th Power Residue Symbols"
+    },
+    {
+      "keywords": [
+        "Pytorch",
+        "Numpy"
+      ],
+      "name": "Egocentric shopping cart localization (Supermarket indoor localization)",
+      "description": "Convolutional Neural Networks (CNN: Densenet, Alexnet, Squeezenet) to classify supermarket aisles, and predict coordinates by linear regression. Results: Accuracy of 87% on the test"
+    },
+    {
+      "keywords": [
+        "C",
+        "Nvidia CUDA"
+      ],
+      "name": "HPC SHA-1",
+      "description": "Distributed hashing algorithm based on SHA-1 using CUDA"
+    },
+    {
+      "keywords": [
+        "Typescript",
+        "MongoDB"
+      ],
+      "name": "lucasrochagit/nest-mongo-query-parser",
+      "description": "Add regex search",
+      "url": "https://github.com/lucasrochagit/nest-mongo-query-parser"
+    },
+    {
+      "keywords": [
+        "Javascript",
+        "ROS"
+      ],
+      "name": "RethinkRobotics-opensource/rosnodejs",
+      "description": "Add udp support to ROS-NodeJs client",
+      "url": "https://github.com/RethinkRobotics-opensource/rosnodejs"
+    },
+    {
+      "keywords": [
+        "Javascript",
+        "PassportJS"
+      ],
+      "name": "italia/spid-passport (archived)",
+      "description": "Full implementation of passport auth middleware for Italian GOV SAML2 (SPID)",
+      "url": "https://github.com/italia/spid-passport"
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}

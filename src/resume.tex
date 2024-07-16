@@ -1,0 +1,172 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Francesco Giorgio Di Franco}}\\
+	Catania, IT $\cdot$ francescodifranco90@gmail.com $\cdot$ (+39) 347 77 48 618 $\cdot$ https://www.linkedin.com/in/francesco-di-franco-865115b7/\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Università degli studi di Catania}\hfill Catania, IT\\
+MS Computer Science - Distributed Systems and Security, Grade: 110/110 \hfill 2016 - 2020\\
+\vspace{2mm}
+\textbf{Università degli studi di Catania}\hfill Catania, IT\\
+BS Computer Science \hfill 2011 - 2016\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{ParkSmart s.r.l.} \hfill Catania (remote)\\
+\textit{Tech Lead} \hfill Nov 22 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Design and development of psm-detector: an AI application made using Python, GStreamer, Nvidia Deepstream, and YoloV8 to do real-time detection.
+	\item Design and development of the new edge data pipeline using Triton server and redis
+	\item Design and development of the edge monitoring system using grafana agent
+	\item SRE of the parksmart-platform: maintaining and configuring required infrastructure using terraform: VPC, EKS (Kuberntes, Flux, Istio, External-dns, cluster-autoscaler, let’s encrypt, Grafana agent), Route53
+\end{itemize}
+\textbf{Hopin l.t.d. (StreamYard)} \hfill London (remote)\\
+\textit{Senior Backend Engineer (Video)} \hfill Oct 2020 - Nov 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Design and development of Livestream-platform highly scalable and highly available RTMP proxy to receive all customer streams and distribute using AWS IVS and MUX. The platform was made of a RestAPI interface built using TypeScript (TwirpTs + Express), gRpc, and AWS DynamoDB. The RTMP-proxy was built using Nginx, Nginx-RTMP, NodeJs, and ffmpeg. The platform was deployed in multiple regions with an active passive failover strategy using AWS Route53.
+	\item Development of MTS (Media Transform Service): a service that exposes RestAPIs to process video (transcode, convert to HLS, captioning, trimming)
+	\item Development of MAR (Media Asset Registry): a service for VOD (consume MTS APIs and distribute generated HLS using AWS Cloudfront)
+	\item Development of Mixer: a web page recorder built using Puppeteer (chromium), WebSockets, and FFmpeg.
+	\item SRE of the livestream-platform: maintaining and configuring required infrastructure using terraform: VPC, EKS (Kubernetes, Flux, Istio, External-dns, cluster-autoscaler, let’s encrypt, Datadog agent, OT collector), Route53
+\end{itemize}
+\textbf{ParkSmart s.r.l.} \hfill Catania\\
+\textit{Full Stack Developer} \hfill Oct 2015 - Oct 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Lead Backend Developer. Designer and developer of highly scalable and highly available microservices application, built in a hybrid architecture cloud-edge, to deliver real-time geolocated events to users, and manage edge devices and payments from users.
+	\item Fron tEnd Developer. Developer of a web dashboard to manage all events and devices
+	\item Tech stack: ReactJS, Socket.io, Nodejs, MongoDB, AWS (S3, Lambda, IoT, DynamoDB, EKS), Kubernetes, GitlabCI.
+\end{itemize}
+\textbf{Vicosystems s.r.l.} \hfill Catania\\
+\textit{ML/BE Developer consultant} \hfill Sept 2017 - Oct 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Development of an audio system for rainfall classification. Convolutional neural networks for audio classification of rainfall, processing audio signal as a 2D signal with Pytorch, PyAudio, Numpy, Pandas, RaspberryPI mod 3B+, and Amazon Web Services.
+	\item Development of a platform to manage smart intercoms and do video calls when you are away using NodeJs, Python (Flask), Janus Web RTC Gateway, and Amazon Web Services.
+	\item Backend Developer. Developed a platform to manage drones, copters, and rovers using ROS and NodeJs
+\end{itemize}
+
+\header{Skils}
+\begin{tabular}{ l l }
+	Programming Languages:    & TypeScript, Javascript, Python, C, Dart, Go                \\
+	Databases:                & PostgreSQL, Mysql / MariaDB, MongoDB, Dynamo DB, Redis     \\
+	Frontend:                 & ReactJS, Angular 14+, Flutter, Vue, HTML5/CSS              \\
+	Media frameworks / tools: & Gstreamer, Ffmpeg                                          \\
+	Cloud Technologies:       & AWS, GCP, Kubernetes                                       \\
+	AI:                       & Kubeflow, Pytorch, Numpy, Pandas, Nivdia Deep Stream       \\
+	DevOps:                   & GitlabCI, GitHub Actions, FluxCD, ArgoCD                   \\
+	Monitoring:               & Grafana, Prometheus, Tempo, Loki, Datadog                  \\
+	Infra:                    & Terraform, Kustomize, Helm, Kustomize, Terragrun, Atlantis \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Pubblications and Open Source Contributions}
+{\textbf{SMILE: Smart Monitoring IoT Learning Ecosystem}}\hfill https://www.researchgate.net/publication/339818489\_SMILE\_Smart\_Monitoring\_IoT\_Learning\_Ecosystem\\
+February 2020, International Journal on Advanced Science Engineering and Information Technology 10(1):413\\
+\vspace*{2mm}
+{\textbf{A Convolutional Neural Networks Approach to Audio Classification for Rainfall Estimation - IEEE Conference Publication}}\hfill https://ieeexplore.ieee.org/document/8924399\\
+September 2019, Technology and Applications (IDAACS), 2019 10th IEEE International Conference on Intelligent Data Acquisition and Advanced Computing Systems\\
+\vspace*{2mm}
+{\textbf{BHJL13- Efficient Cryptosystems From 2k-th Power Residue Symbols}}\hfill https://github.com/cicciodifranco/2k-power-residue\\
+An implementation in C of BHJL13- Efficient Cryptosystems From 2k-th Power Residue Symbols\\
+\vspace*{2mm}
+{\textbf{Egocentric shopping cart localization (Supermarket indoor localization)}} {\sl Pytorch, Numpy} \\
+Convolutional Neural Networks (CNN: Densenet, Alexnet, Squeezenet) to classify supermarket aisles, and predict coordinates by linear regression. Results: Accuracy of 87\% on the test\\
+\vspace*{2mm}
+{\textbf{HPC SHA-1}} {\sl C, Nvidia CUDA} \\
+Distributed hashing algorithm based on SHA-1 using CUDA\\
+\vspace*{2mm}
+{\textbf{lucasrochagit/nest-mongo-query-parser}} {\sl Typescript, MongoDB} \hfill https://github.com/lucasrochagit/nest-mongo-query-parser\\
+Add regex search\\
+\vspace*{2mm}
+{\textbf{RethinkRobotics-opensource/rosnodejs}} {\sl Javascript, ROS} \hfill https://github.com/RethinkRobotics-opensource/rosnodejs\\
+Add udp support to ROS-NodeJs client\\
+\vspace*{2mm}
+{\textbf{italia/spid-passport (archived)}} {\sl Javascript, PassportJS} \hfill https://github.com/italia/spid-passport\\
+Full implementation of passport auth middleware for Italian GOV SAML2 (SPID)\\
+\vspace*{2mm}
+
+
+
+\ 
+\end{document}
