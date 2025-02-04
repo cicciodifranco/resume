@@ -36,18 +36,28 @@
   ],
   "work": [
     {
+      "highlights": [
+        "Design and development of Customer's AI Chatbot using OpenAI, LanggraphJs, PgVector. A multi AI agent application that provide an assistant API that, once enabled, is able to answer about public data (pages, contacts), ecommerce data such as products, shipping and payments mthods."
+      ],
+      "company": "Flazio s.r.l.",
+      "position": "Senior Full Stack Engineer",
+      "location": "Catania",
+      "startDate": "Dec 2024",
+      "endDate": "Present"
+    },
+    {
       "location": " Catania (remote)",
       "position": "Tech Lead",
       "website": "",
       "startDate": "Nov 22",
-      "endDate": "Present",
       "highlights": [
         "Design and development of psm-detector: an AI application made using Python, GStreamer, Nvidia Deepstream, and YoloV8 to do real-time detection.",
         "Design and development of the new edge data pipeline using Triton server and redis",
         "Design and development of the edge monitoring system using grafana agent",
         "SRE of the parksmart-platform: maintaining and configuring required infrastructure using terraform: VPC, EKS (Kuberntes, Flux, Istio, External-dns, cluster-autoscaler, let’s encrypt, Grafana agent), Route53"
       ],
-      "company": "ParkSmart s.r.l."
+      "company": "ParkSmart s.r.l.",
+      "endDate": "Oct 2024"
     },
     {
       "highlights": [
@@ -87,6 +97,7 @@
       "startDate": "Sept 2017",
       "endDate": "Oct 2020"
     }
+    
   ],
   "skills": [
     {
@@ -260,10 +271,10 @@
   "sections": [
     "templates",
     "profile",
-    "education",
     "work",
     "skills",
     "projects",
+    "education",
     "awards"
   ]
 }
